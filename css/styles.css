@@ -165,6 +165,7 @@ cursor: pointer;
     background-color: #2F303A;
     padding: 200px 0;
     background-image: url("../images/Img4.jpg");
+    background-position: 50% 50%;
 }
 
 h1{
@@ -555,7 +556,7 @@ h2{
 
 .modal{
     position: fixed;
-    width: 528px;
+    width: 480px;
     height: 581px;
     top: 221px;
     left: calc(50% - 264px);
@@ -564,6 +565,44 @@ h2{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     cursor: default;
+    padding-left: 40px;
+    padding-top: 8px;
+    padding-right: 8px;
+}
+
+.modal-form-container{
+    display: block;
+}
+
+.modal-form-title{
+    margin-top: 10px;
+    width: 448px;
+    height: 23px;
+    text-align: center;
+}
+
+.modal-form{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 40px;
+    margin-right: 32px;
+}
+
+.modal .comment{
+    height: 120px;
+    width: 420px;
+    padding: 12px 16px;
+}
+
+.comment::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
 }
 
 .close-btn{
@@ -579,7 +618,6 @@ h2{
     padding-left: 6px;
     padding-top: 2px;
 }
-
 
 .is-hidden{
     pointer-events: none;

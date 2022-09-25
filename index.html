@@ -401,10 +401,10 @@
       <div class="footer-form">
         <form>
           <label>
-            <input class="newsletter-form" type="text" name="newsletter-form" placeholder="E-mail" />
+            <input class="newsletter-form" type="email" name="email" placeholder="E-mail"/>
           </label>
         </form>
-        <button type="button" class="newsletter-btn">
+        <button type="newsletter-submit" class="newsletter-btn">
           Zapisz się
         </button>
       </div>
@@ -421,15 +421,28 @@
             <use href="./images/icon.svg#x"></use>
           </svg>
         </button>
-        <h4>zostaw swoje dane w formularzu poniżej</h4>
-        <form type="text" >
-          <label><input/></label></form>
-        <form type="text">
-          <label><input/></label></form>
-        <form type="text">
-          <label><input/></label></form>
-        <form type="text">
-          <label><input/></label></form>
+          <h4 class="modal-form-title">
+            zostaw swoje dane w formularzu poniżej
+          </h4>
+        <form type="text" class="modal-form-container" >
+          <label for="user_name">
+            Imie
+          </label>
+            <input class="modal-form" id="user_name">
+          <label for="user_phone">
+            Telefon
+          </label>
+            <input class="modal-form"/>
+          <label for="user_email" id="modal-form">
+            E-mail
+          </label>
+          <input class="modal-form" id="user_email"/>
+          <label>
+            Komentarz
+            <textarea class="modal-form comment" rows="5" placeholder="Wprowadź tekst"></textarea></label>
+            <input type="checkbox">
+        </form>
+
       </div>
     </div>
     <script src="./js/modal.js"></script>
