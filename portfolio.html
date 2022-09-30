@@ -268,16 +268,17 @@
         <h5 class="footer-form-title">
           zapisz się do newslettera
         </h5>
-        <div class="footer-form">
-          <form>
-            <label>
-              <input class="newsletter-form" type="text" name="newsletter-form" placeholder="E-mail" />
-            </label>
-          </form>
-          <button type="button" class="newsletter-btn">
-            Zapisz się
+        <form class="footer-form" type="newletter" name="newletter">
+          <label>
+            <input class="newsletter-form" type="email" name="email" placeholder="E-mail" />
+          </label>
+          <button type="submit" class="newsletter-btn">
+            <span> Zapisz się</span>
+            <svg class="icon-newsletter" width="24" height="24">
+              <use href="./images/icon.svg#send"></use>
+            </svg>
           </button>
-        </div>
+        </form>
       </div>
     </div>
   </footer>
